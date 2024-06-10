@@ -3145,7 +3145,16 @@
 
     <!-- Recognition Input paths -->
     <path name="recognition-mic">
-        <path name="media-mic" />
+		<ctl name="ABOX SE Standalone" value="10" />
+		<path name="dev-main-mic" />
+		<path name="route-seriallif-24bit-to-wdma4" />
+		<path name="route-wdma4-to-tdmdemux0" />
+    	<!-- primary stream node -->
+		<path name="route-tdmdemux0-to-vpcmindai0" />
+    	<!-- fast stream node -->
+		<path name="route-tdmdemux0-to-vpcmindai1" />
+    	<!-- low latency stream node -->
+		<path name="route-tdmdemux0-to-vpcmindai2" />
     </path>
 
     <path name="recognition-2nd-mic">
@@ -5666,7 +5675,8 @@
 
 	<!-- recognition input volume -->
 	<path name="gain-recognition-mic">
-		<path name="gain-media-mic" />
+		<ctl name="VTS DMIC GAIN MODE0" value="8738" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
 	</path>
 
 	<path name="gain-recognition-2nd-mic">
