@@ -5676,7 +5676,7 @@
 	<!-- recognition input volume -->
 	<path name="gain-recognition-mic">
 		<ctl name="VTS DMIC GAIN MODE0" value="8738" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="16" />
 	</path>
 
 	<path name="gain-recognition-2nd-mic">
