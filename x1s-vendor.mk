@@ -74,5 +74,6 @@ PRODUCT_PACKAGES += \
     libexynoscamera_fakemultiframe \
     libexynoscamera_vpl_plugin \
     libwrappergps \
+    sensors.sensorhub \
     HotwordEnrollmentOKGoogleEx3CORTEXM4 \
     HotwordEnrollmentXGoogleEx3CORTEXM4
